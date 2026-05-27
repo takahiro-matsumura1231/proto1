@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1080 height=1980 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=540 height=990 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -55,9 +55,9 @@
       var loaderUrl = buildUrl + "/smartphone_test.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/smartphone_test.data.gz",
-        frameworkUrl: buildUrl + "/smartphone_test.framework.js.gz",
-        codeUrl: buildUrl + "/smartphone_test.wasm.gz",
+        dataUrl: buildUrl + "/smartphone_test.data",
+        frameworkUrl: buildUrl + "/smartphone_test.framework.js",
+        codeUrl: buildUrl + "/smartphone_test.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "DrawWeaponGame",
@@ -104,8 +104,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1080px";
-        canvas.style.height = "1980px";
+        canvas.style.width = "540px";
+        canvas.style.height = "990px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
